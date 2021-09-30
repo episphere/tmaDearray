@@ -325,7 +325,7 @@ window.onload = async () => {
 window.onhashchange = svs.loadHashParams
 
 svs.dearrayOptionsChanged = () => {
-  document.getElementById("circleRadiusThreshold") = parseFloat(document.getElementById("circleRadiusSlider").value)
+  document.getElementById("circleRadiusThreshold").value = parseFloat(document.getElementById("circleRadiusSlider").value)
   if (document.getElementById("canvasOutput")) {
     svs.dearrayTMA()
   }
